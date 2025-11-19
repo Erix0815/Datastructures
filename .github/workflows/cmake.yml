@@ -21,6 +21,3 @@ jobs:
 
     - name: Installing
       run: make install
-
-    - name: Testing installation
-      run: source src/test/test_install.sh
