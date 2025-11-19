@@ -1,0 +1,26 @@
+name: CMake
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Compiling
+      run: make build
+
+    - name: Running unittests
+      run: make test
+
+    - name: Installing
+      run: make install
+
+    - name: Testing installation
+      run: source src/test/test_install.sh

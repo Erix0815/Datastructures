@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.cwd": "${workspaceFolder}",
+		"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+		"cmake.buildDirectory": "${workspaceFolder}/bin",
+		"C_Cpp.doxygen.generatedStyle": "/**",
+		"C_Cpp.formatting": "clangFormat",
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools-extension-pack",
+			"ms-vscode.makefile-tools",
+			"betwo.vscode-doxygen-runner",
+		]
+	}
+}

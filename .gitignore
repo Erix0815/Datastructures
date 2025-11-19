@@ -1,0 +1,9 @@
+# Vscode
+.vscode/
+
+# Build dir
+bin/
+build/
+
+# generated Documantation
+docs/
