@@ -8,12 +8,14 @@ permissions:
   contents: write
 
 jobs:
-  deploy:
+  Doxygen:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Generate and deploy documentation
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate and Deploy
         uses: AgarwalSaurav/ghaction-doxygen-ghpages@v2.1.0
         with:
             github_token: ${{ secrets.GITHUB_TOKEN }}

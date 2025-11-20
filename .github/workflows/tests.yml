@@ -1,0 +1,14 @@
+name: Unittests
+
+on: [push, pull_request]
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    
+    - name: Test
+      run: make test

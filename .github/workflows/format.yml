@@ -1,0 +1,14 @@
+name: Format-Check
+
+on: [push, pull_request]
+
+jobs:
+  Format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Format
+      run: find src/ -iname '*.h' -o -iname '*.c' | xargs clang-format --dry-run --Werror
