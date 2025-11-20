@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>c_physics_engine: File Members</title>
+<title>mostly-trees: src/lib/universal/universal.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,9 +26,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">c_physics_engine
+   <div id="projectname">mostly-trees
    </div>
-   <div id="projectbrief">A custom physics engine written in C/C++</div>
+   <div id="projectbrief">Datatructures in C</div>
   </td>
  </tr>
  </tbody>
@@ -56,8 +57,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="doc-content">
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function(){ initResizable(false); });
@@ -84,10 +83,52 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_9220686de779a22eba2870941e8d3eee.html">universal</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">Typedefs</a>  </div>
+  <div class="headertitle"><div class="title">universal.h File Reference</div></div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all variables with links to the files they belong to:</div><ul>
-<li>TEXT&#160;:&#160;<a class="el" href="greeting_8c.html#aa23790004700db9a07e741d1b17ed795">greeting.c</a>, <a class="el" href="greeting_8h.html#aa23790004700db9a07e741d1b17ed795">greeting.h</a></li>
-</ul>
+
+<p><a href="universal_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a2fbd5b262781b3d6a74e6c8db60be079" id="r_a2fbd5b262781b3d6a74e6c8db60be079"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fbd5b262781b3d6a74e6c8db60be079">compare_fn</a>) (void *a, void *b)</td></tr>
+<tr class="separator:a2fbd5b262781b3d6a74e6c8db60be079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a2fbd5b262781b3d6a74e6c8db60be079" name="a2fbd5b262781b3d6a74e6c8db60be079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fbd5b262781b3d6a74e6c8db60be079">&#9670;&#160;</a></span>compare_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* compare_fn) (void *a, void *b)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>a function used to compare and sort elements in datastructures </p><dl class="section return"><dt>Returns</dt><dd>signed "distance" between <code>a</code> and <code>b</code> (similar to <code>b - a</code>). <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadRight">Value   </th><th class="markdownTableHeadLeft">Meaning    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyRight"><code>&gt; 0</code>   </td><td class="markdownTableBodyLeft"><code>a</code> precedes <code>b</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyRight"><code>= 0</code>   </td><td class="markdownTableBodyLeft">the values are equal    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyRight"><code>&lt; 0</code>   </td><td class="markdownTableBodyLeft"><code>b</code> precedes <code>a</code>   </td></tr>
+</table>
+</dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

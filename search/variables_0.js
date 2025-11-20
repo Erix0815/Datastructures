@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['text_0',['TEXT',['../greeting_8c.html#aa23790004700db9a07e741d1b17ed795',1,'TEXT:&#160;greeting.c'],['../greeting_8h.html#aa23790004700db9a07e741d1b17ed795',1,'TEXT:&#160;greeting.c']]]
+  ['bf_0',['bf',['../structavl__node.html#a2350cad3f9bdfb3b78391b3a6f3ee3b9',1,'avl_node']]]
 ];
