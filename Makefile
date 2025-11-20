@@ -1,4 +1,5 @@
-default: clean fmt demo
+default: fmt demo
+check: clean fmt doc test
 
 build:
 	@mkdir -p bin
@@ -15,7 +16,7 @@ test: build
 	@make -sC bin test
 
 demo: build
-	./bin/src/demo/demo
+	@./bin/src/demo/demo
 
 doc:
 	@doxygen Doxyfile

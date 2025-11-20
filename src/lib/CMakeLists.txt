@@ -1,11 +1,14 @@
 add_library(mostly-trees
-	greeting/greeting.c
+	universal/universal.c
+	trees/avl.c
 )
 target_include_directories(mostly-trees PUBLIC
-	./greeting/
+	./universal/
+	./trees/
 )
 set(PUBLIC_HEADERS
-	greeting/greeting.h
+	universal/universal.h
+	trees/avl.h
 )
 set_target_properties(mostly-trees PROPERTIES
 	VERSION ${PROJECT_VERSION}

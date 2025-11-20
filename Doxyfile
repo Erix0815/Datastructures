@@ -31,6 +31,7 @@ STRIP_CODE_COMMENTS    = YES
 GENERATE_HTML          = YES
 HTML_OUTPUT            = html
 HTML_FILE_EXTENSION    = .html
+HTML_COLORSTYLE        = TOGGLE
 
 # LaTeX output
 GENERATE_LATEX         = NO
