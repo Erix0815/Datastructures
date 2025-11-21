@@ -92,7 +92,8 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">avl.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -102,50 +103,118 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavl__node.html">avl_node</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavl__tree.html">avl_tree</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavl__tree__s.html">avl_tree_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">represents a self-balancing avl-tree  <a href="structavl__tree__s.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:abc1e2fe7b0bb02795640ba40485224d3" id="r_abc1e2fe7b0bb02795640ba40485224d3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc1e2fe7b0bb02795640ba40485224d3">BF</a> { <br />
-&#160;&#160;<a class="el" href="#abc1e2fe7b0bb02795640ba40485224d3a290ce8341b61bf6dd663d70a57294c02">LeftUnbalanced</a> = -2
-, <a class="el" href="#abc1e2fe7b0bb02795640ba40485224d3a858828704d08cfff9d0827c1f8aa20c5">LeftHeavy</a> = -1
-, <a class="el" href="#abc1e2fe7b0bb02795640ba40485224d3adaad19d4739e211248073690cda2d0a3">Balanced</a> = 0
-, <a class="el" href="#abc1e2fe7b0bb02795640ba40485224d3ac58b2621453ebe02f3ef8f28cf19dec4">RightHeavy</a> = 1
-, <br />
-&#160;&#160;<a class="el" href="#abc1e2fe7b0bb02795640ba40485224d3a273b2725b8308c4a1baecbf84325aa3e">RightUnbalanced</a> = 2
-<br />
- }</td></tr>
-<tr class="separator:abc1e2fe7b0bb02795640ba40485224d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a769d6d31262b6409317c1135e9f3aea5" id="r_a769d6d31262b6409317c1135e9f3aea5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structavl__node__s.html">avl_node_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a769d6d31262b6409317c1135e9f3aea5">avl_node</a></td></tr>
+<tr class="memdesc:a769d6d31262b6409317c1135e9f3aea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">node used in an <a class="el" href="#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a>     <br /></td></tr>
+<tr class="separator:a769d6d31262b6409317c1135e9f3aea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e40b85ee956dabb5fa10c83318da231" id="r_a5e40b85ee956dabb5fa10c83318da231"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structavl__tree__s.html">avl_tree_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a></td></tr>
+<tr class="memdesc:a5e40b85ee956dabb5fa10c83318da231"><td class="mdescLeft">&#160;</td><td class="mdescRight">represents a self-balancing avl-tree  <br /></td></tr>
+<tr class="separator:a5e40b85ee956dabb5fa10c83318da231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7fcb3e8d2ee03c85c77907e7802236ea" id="r_a7fcb3e8d2ee03c85c77907e7802236ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fcb3e8d2ee03c85c77907e7802236ea">initialize_avl_tree</a> (<a class="el" href="universal_8h.html#acfd7df959717084d92482f7c740c024c">cmp_fn</a> <a class="el" href="universal_8h.html#acfd7df959717084d92482f7c740c024c">cmp_fn</a>)</td></tr>
+<tr class="memdesc:a7fcb3e8d2ee03c85c77907e7802236ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a new <a class="el" href="#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a>  <br /></td></tr>
+<tr class="separator:a7fcb3e8d2ee03c85c77907e7802236ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acccd8e8d8148e399d0140009616e3536" id="r_acccd8e8d8148e399d0140009616e3536"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acccd8e8d8148e399d0140009616e3536">insert_into_avl_tree</a> (<a class="el" href="#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> *tree, void *data)</td></tr>
+<tr class="memdesc:acccd8e8d8148e399d0140009616e3536"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert a new item into the tree  <br /></td></tr>
+<tr class="separator:acccd8e8d8148e399d0140009616e3536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="abc1e2fe7b0bb02795640ba40485224d3" name="abc1e2fe7b0bb02795640ba40485224d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc1e2fe7b0bb02795640ba40485224d3">&#9670;&#160;</a></span>BF</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a769d6d31262b6409317c1135e9f3aea5" name="a769d6d31262b6409317c1135e9f3aea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769d6d31262b6409317c1135e9f3aea5">&#9670;&#160;</a></span>avl_node</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="#abc1e2fe7b0bb02795640ba40485224d3">BF</a></td>
+          <td class="memname">typedef struct <a class="el" href="structavl__node__s.html">avl_node_s</a> <a class="el" href="#a769d6d31262b6409317c1135e9f3aea5">avl_node</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>possible balance-factors of the nodes in a AVL-tree<br  />
-<code>height(right_subtree) - height(left_subtree)</code> </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abc1e2fe7b0bb02795640ba40485224d3a290ce8341b61bf6dd663d70a57294c02" name="abc1e2fe7b0bb02795640ba40485224d3a290ce8341b61bf6dd663d70a57294c02"></a>LeftUnbalanced&#160;</td><td class="fielddoc"><p>the left subtree is too high and the node needs to be rebalanced </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abc1e2fe7b0bb02795640ba40485224d3a858828704d08cfff9d0827c1f8aa20c5" name="abc1e2fe7b0bb02795640ba40485224d3a858828704d08cfff9d0827c1f8aa20c5"></a>LeftHeavy&#160;</td><td class="fielddoc"><p>the left subtree is higher than the right </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abc1e2fe7b0bb02795640ba40485224d3adaad19d4739e211248073690cda2d0a3" name="abc1e2fe7b0bb02795640ba40485224d3adaad19d4739e211248073690cda2d0a3"></a>Balanced&#160;</td><td class="fielddoc"><p>both subtrees have the same height </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abc1e2fe7b0bb02795640ba40485224d3ac58b2621453ebe02f3ef8f28cf19dec4" name="abc1e2fe7b0bb02795640ba40485224d3ac58b2621453ebe02f3ef8f28cf19dec4"></a>RightHeavy&#160;</td><td class="fielddoc"><p>the right subtree is higher than the left </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abc1e2fe7b0bb02795640ba40485224d3a273b2725b8308c4a1baecbf84325aa3e" name="abc1e2fe7b0bb02795640ba40485224d3a273b2725b8308c4a1baecbf84325aa3e"></a>RightUnbalanced&#160;</td><td class="fielddoc"><p>the right subtree is too high and the node needs to be rebalanced </p>
-</td></tr>
-</table>
+
+<p>node used in an <a class="el" href="#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a>    </p>
+
+</div>
+</div>
+<a id="a5e40b85ee956dabb5fa10c83318da231" name="a5e40b85ee956dabb5fa10c83318da231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e40b85ee956dabb5fa10c83318da231">&#9670;&#160;</a></span>avl_tree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structavl__tree__s.html">avl_tree_s</a> <a class="el" href="#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>represents a self-balancing avl-tree </p>
+<p>abstraction over the <a class="el" href="#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> <br  />
+strores the <a class="el" href="universal_8h.html#acfd7df959717084d92482f7c740c024c">cmp_fn</a> so it does not have to be explicititly passed to every function </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a7fcb3e8d2ee03c85c77907e7802236ea" name="a7fcb3e8d2ee03c85c77907e7802236ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fcb3e8d2ee03c85c77907e7802236ea">&#9670;&#160;</a></span>initialize_avl_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> * initialize_avl_tree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="universal_8h.html#acfd7df959717084d92482f7c740c024c">cmp_fn</a></td>          <td class="paramname"><span class="paramname"><em>cmp_fn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>creates a new <a class="el" href="#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmp_fn</td><td>compare-function that will be used for the elements in the tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new, empty avl-tree, ready for use </dd></dl>
+
+</div>
+</div>
+<a id="acccd8e8d8148e399d0140009616e3536" name="acccd8e8d8148e399d0140009616e3536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acccd8e8d8148e399d0140009616e3536">&#9670;&#160;</a></span>insert_into_avl_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool insert_into_avl_tree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> *</td>          <td class="paramname"><span class="paramname"><em>tree</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>insert a new item into the tree </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tree</td><td>the avl-tree to insert into </td></tr>
+    <tr><td class="paramname">data</td><td>pointer to the item do be added </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>false</code> if the data-item was already in the tree </dd></dl>
 
 </div>
 </div>

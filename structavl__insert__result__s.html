@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>mostly-trees: avl_node Struct Reference</title>
+<title>mostly-trees: avl_insert_result_s Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,83 +88,81 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structavl__node-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">avl_node Struct Reference</div></div>
+<a href="structavl__insert__result__s-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">avl_insert_result_s Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="avl_8h_source.html">avl.h</a>&gt;</code></p>
+<p>a struct containing information needed for updating references in <a class="el" href="avl_8h.html#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> and balancing the <a class="el" href="avl_8h.html#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a>  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="avl__internal_8h_source.html">avl_internal.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a33cf8276931c690f1229c5c83ed31d69" id="r_a33cf8276931c690f1229c5c83ed31d69"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33cf8276931c690f1229c5c83ed31d69">data</a></td></tr>
-<tr class="separator:a33cf8276931c690f1229c5c83ed31d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a437d9ef012fc682b8bdb5e2faab03cd2" id="r_a437d9ef012fc682b8bdb5e2faab03cd2"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structavl__node.html">avl_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a437d9ef012fc682b8bdb5e2faab03cd2">left</a></td></tr>
-<tr class="separator:a437d9ef012fc682b8bdb5e2faab03cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8102bb7bf760222eaaedb3add57d7606" id="r_a8102bb7bf760222eaaedb3add57d7606"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structavl__node.html">avl_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8102bb7bf760222eaaedb3add57d7606">right</a></td></tr>
-<tr class="separator:a8102bb7bf760222eaaedb3add57d7606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2350cad3f9bdfb3b78391b3a6f3ee3b9" id="r_a2350cad3f9bdfb3b78391b3a6f3ee3b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="avl_8h.html#abc1e2fe7b0bb02795640ba40485224d3">BF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2350cad3f9bdfb3b78391b3a6f3ee3b9">bf</a></td></tr>
-<tr class="separator:a2350cad3f9bdfb3b78391b3a6f3ee3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa85dca1dfdf795ead6a98bae4a34522" id="r_afa85dca1dfdf795ead6a98bae4a34522"><td class="memItemLeft" align="right" valign="top"><a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa85dca1dfdf795ead6a98bae4a34522">node</a></td></tr>
+<tr class="memdesc:afa85dca1dfdf795ead6a98bae4a34522"><td class="mdescLeft">&#160;</td><td class="mdescRight">the (new) root of the current subtree  <br /></td></tr>
+<tr class="separator:afa85dca1dfdf795ead6a98bae4a34522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1d5acf986dfc716dd8a806b1b5d2b0" id="r_a5d1d5acf986dfc716dd8a806b1b5d2b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d1d5acf986dfc716dd8a806b1b5d2b0">balance_trace</a></td></tr>
+<tr class="memdesc:a5d1d5acf986dfc716dd8a806b1b5d2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>true</code>, if the height of the subtree changed  <br /></td></tr>
+<tr class="separator:a5d1d5acf986dfc716dd8a806b1b5d2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c9d6e33e739a03da4ab31c552cfdeb" id="r_a20c9d6e33e739a03da4ab31c552cfdeb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20c9d6e33e739a03da4ab31c552cfdeb">inserted</a></td></tr>
+<tr class="memdesc:a20c9d6e33e739a03da4ab31c552cfdeb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>false</code> if the tree already contained the inserted data  <br /></td></tr>
+<tr class="separator:a20c9d6e33e739a03da4ab31c552cfdeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2350cad3f9bdfb3b78391b3a6f3ee3b9" name="a2350cad3f9bdfb3b78391b3a6f3ee3b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2350cad3f9bdfb3b78391b3a6f3ee3b9">&#9670;&#160;</a></span>bf</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>a struct containing information needed for updating references in <a class="el" href="avl_8h.html#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> and balancing the <a class="el" href="avl_8h.html#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5d1d5acf986dfc716dd8a806b1b5d2b0" name="a5d1d5acf986dfc716dd8a806b1b5d2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1d5acf986dfc716dd8a806b1b5d2b0">&#9670;&#160;</a></span>balance_trace</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="avl_8h.html#abc1e2fe7b0bb02795640ba40485224d3">BF</a> avl_node::bf</td>
+          <td class="memname">bool avl_insert_result_s::balance_trace</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p><code>true</code>, if the height of the subtree changed </p>
+
 </div>
 </div>
-<a id="a33cf8276931c690f1229c5c83ed31d69" name="a33cf8276931c690f1229c5c83ed31d69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33cf8276931c690f1229c5c83ed31d69">&#9670;&#160;</a></span>data</h2>
+<a id="a20c9d6e33e739a03da4ab31c552cfdeb" name="a20c9d6e33e739a03da4ab31c552cfdeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c9d6e33e739a03da4ab31c552cfdeb">&#9670;&#160;</a></span>inserted</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* avl_node::data</td>
+          <td class="memname">bool avl_insert_result_s::inserted</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p><code>false</code> if the tree already contained the inserted data </p>
+
 </div>
 </div>
-<a id="a437d9ef012fc682b8bdb5e2faab03cd2" name="a437d9ef012fc682b8bdb5e2faab03cd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a437d9ef012fc682b8bdb5e2faab03cd2">&#9670;&#160;</a></span>left</h2>
+<a id="afa85dca1dfdf795ead6a98bae4a34522" name="afa85dca1dfdf795ead6a98bae4a34522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa85dca1dfdf795ead6a98bae4a34522">&#9670;&#160;</a></span>node</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structavl__node.html">avl_node</a>* avl_node::left</td>
+          <td class="memname"><a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a>* avl_insert_result_s::node</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a8102bb7bf760222eaaedb3add57d7606" name="a8102bb7bf760222eaaedb3add57d7606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8102bb7bf760222eaaedb3add57d7606">&#9670;&#160;</a></span>right</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structavl__node.html">avl_node</a>* avl_node::right</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>the (new) root of the current subtree </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/lib/trees/<a class="el" href="avl_8h_source.html">avl.h</a></li>
+<li>src/lib/trees/<a class="el" href="avl__internal_8h_source.html">avl_internal.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

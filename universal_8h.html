@@ -100,22 +100,25 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2fbd5b262781b3d6a74e6c8db60be079" id="r_a2fbd5b262781b3d6a74e6c8db60be079"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fbd5b262781b3d6a74e6c8db60be079">compare_fn</a>) (void *a, void *b)</td></tr>
-<tr class="separator:a2fbd5b262781b3d6a74e6c8db60be079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd7df959717084d92482f7c740c024c" id="r_acfd7df959717084d92482f7c740c024c"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfd7df959717084d92482f7c740c024c">cmp_fn</a>) (void *a, void *b)</td></tr>
+<tr class="memdesc:acfd7df959717084d92482f7c740c024c"><td class="mdescLeft">&#160;</td><td class="mdescRight">a function used to compare and sort elements in datastructures  <br /></td></tr>
+<tr class="separator:acfd7df959717084d92482f7c740c024c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a2fbd5b262781b3d6a74e6c8db60be079" name="a2fbd5b262781b3d6a74e6c8db60be079"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fbd5b262781b3d6a74e6c8db60be079">&#9670;&#160;</a></span>compare_fn</h2>
+<a id="acfd7df959717084d92482f7c740c024c" name="acfd7df959717084d92482f7c740c024c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd7df959717084d92482f7c740c024c">&#9670;&#160;</a></span>cmp_fn</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* compare_fn) (void *a, void *b)</td>
+          <td class="memname">typedef int(* cmp_fn) (void *a, void *b)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>a function used to compare and sort elements in datastructures </p><dl class="section return"><dt>Returns</dt><dd>signed "distance" between <code>a</code> and <code>b</code> (similar to <code>b - a</code>). <table class="markdownTable">
+
+<p>a function used to compare and sort elements in datastructures </p>
+<dl class="section return"><dt>Returns</dt><dd>signed "distance" between <code>a</code> and <code>b</code> (similar to <code>b - a</code>). <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadRight">Value   </th><th class="markdownTableHeadLeft">Meaning    </th></tr>
 <tr class="markdownTableRowOdd">

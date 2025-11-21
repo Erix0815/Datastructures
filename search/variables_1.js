@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['compare_5ffn_0',['compare_fn',['../structavl__tree.html#aa5e406e334c71c55349bf44db8691892',1,'avl_tree']]]
+  ['cmp_5ffn_0',['cmp_fn',['../structavl__tree__s.html#ad13bb262cb68bca6403db87e3dd186a6',1,'avl_tree_s']]]
 ];

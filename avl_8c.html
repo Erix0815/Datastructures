@@ -90,11 +90,137 @@ $(function(){ initResizable(false); });
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">avl.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="avl_8h_source.html">avl.h</a>&quot;</code><br />
-</div></div><!-- contents -->
+<div class="textblock"><code>#include &quot;<a class="el" href="avl__internal_8h_source.html">avl_internal.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7fcb3e8d2ee03c85c77907e7802236ea" id="r_a7fcb3e8d2ee03c85c77907e7802236ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="avl_8h.html#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fcb3e8d2ee03c85c77907e7802236ea">initialize_avl_tree</a> (<a class="el" href="universal_8h.html#acfd7df959717084d92482f7c740c024c">cmp_fn</a> <a class="el" href="universal_8h.html#acfd7df959717084d92482f7c740c024c">cmp_fn</a>)</td></tr>
+<tr class="memdesc:a7fcb3e8d2ee03c85c77907e7802236ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a new <a class="el" href="avl_8h.html#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a>  <br /></td></tr>
+<tr class="separator:a7fcb3e8d2ee03c85c77907e7802236ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489ad8fb4396274d365940f5588aa2b0" id="r_a489ad8fb4396274d365940f5588aa2b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a489ad8fb4396274d365940f5588aa2b0">initialize_avl_node</a> (void *data)</td></tr>
+<tr class="memdesc:a489ad8fb4396274d365940f5588aa2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a new <a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a>, without children  <br /></td></tr>
+<tr class="separator:a489ad8fb4396274d365940f5588aa2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acccd8e8d8148e399d0140009616e3536" id="r_acccd8e8d8148e399d0140009616e3536"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acccd8e8d8148e399d0140009616e3536">insert_into_avl_tree</a> (<a class="el" href="avl_8h.html#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> *tree, void *data)</td></tr>
+<tr class="memdesc:acccd8e8d8148e399d0140009616e3536"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert a new item into the tree  <br /></td></tr>
+<tr class="separator:acccd8e8d8148e399d0140009616e3536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1329900fbf613531c7337cbb4e9e0ab" id="r_ae1329900fbf613531c7337cbb4e9e0ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="avl__internal_8h.html#ab1deaba95295536dd7d82fba5b9a8970">avl_insert_result</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1329900fbf613531c7337cbb4e9e0ab">insert_into_avl_node</a> (<a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> *node, void *data)</td></tr>
+<tr class="memdesc:ae1329900fbf613531c7337cbb4e9e0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert data into an <a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a>  <br /></td></tr>
+<tr class="separator:ae1329900fbf613531c7337cbb4e9e0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a489ad8fb4396274d365940f5588aa2b0" name="a489ad8fb4396274d365940f5588aa2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a489ad8fb4396274d365940f5588aa2b0">&#9670;&#160;</a></span>initialize_avl_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> * initialize_avl_node </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>creates a new <a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a>, without children </p>
+
+</div>
+</div>
+<a id="a7fcb3e8d2ee03c85c77907e7802236ea" name="a7fcb3e8d2ee03c85c77907e7802236ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fcb3e8d2ee03c85c77907e7802236ea">&#9670;&#160;</a></span>initialize_avl_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="avl_8h.html#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> * initialize_avl_tree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="universal_8h.html#acfd7df959717084d92482f7c740c024c">cmp_fn</a></td>          <td class="paramname"><span class="paramname"><em>cmp_fn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>creates a new <a class="el" href="avl_8h.html#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmp_fn</td><td>compare-function that will be used for the elements in the tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new, empty avl-tree, ready for use </dd></dl>
+
+</div>
+</div>
+<a id="ae1329900fbf613531c7337cbb4e9e0ab" name="ae1329900fbf613531c7337cbb4e9e0ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1329900fbf613531c7337cbb4e9e0ab">&#9670;&#160;</a></span>insert_into_avl_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="avl__internal_8h.html#ab1deaba95295536dd7d82fba5b9a8970">avl_insert_result</a> * insert_into_avl_node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>insert data into an <a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>root of the current subtree to insert into </td></tr>
+    <tr><td class="paramname">data</td><td>data to insert </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acccd8e8d8148e399d0140009616e3536" name="acccd8e8d8148e399d0140009616e3536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acccd8e8d8148e399d0140009616e3536">&#9670;&#160;</a></span>insert_into_avl_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool insert_into_avl_tree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="avl_8h.html#a5e40b85ee956dabb5fa10c83318da231">avl_tree</a> *</td>          <td class="paramname"><span class="paramname"><em>tree</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>insert a new item into the tree </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tree</td><td>the avl-tree to insert into </td></tr>
+    <tr><td class="paramname">data</td><td>pointer to the item do be added </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>false</code> if the data-item was already in the tree </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0

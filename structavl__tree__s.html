@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>mostly-trees: src/lib/trees Directory Reference</title>
+<title>mostly-trees: avl_tree_s Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,26 +83,70 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_dfec15219840db56d1f39c725bd13237.html">trees</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
-  <div class="headertitle"><div class="title">trees Directory Reference</div></div>
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structavl__tree__s-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">avl_tree_s Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>represents a self-balancing avl-tree  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="avl_8h_source.html">avl.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
-Files</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avl_8c.html">avl.c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="avl_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avl_8h.html">avl.h</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="avl__internal_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avl__internal_8h.html">avl_internal.h</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aea8c97a11be89983ca6873bbee2b83b7" id="r_aea8c97a11be89983ca6873bbee2b83b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea8c97a11be89983ca6873bbee2b83b7">root</a></td></tr>
+<tr class="memdesc:aea8c97a11be89983ca6873bbee2b83b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">root <a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> of the tree  <br /></td></tr>
+<tr class="separator:aea8c97a11be89983ca6873bbee2b83b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13bb262cb68bca6403db87e3dd186a6" id="r_ad13bb262cb68bca6403db87e3dd186a6"><td class="memItemLeft" align="right" valign="top">cmp_fn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad13bb262cb68bca6403db87e3dd186a6">cmp_fn</a></td></tr>
+<tr class="memdesc:ad13bb262cb68bca6403db87e3dd186a6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="#ad13bb262cb68bca6403db87e3dd186a6">cmp_fn</a> used for items in the tree  <br /></td></tr>
+<tr class="separator:ad13bb262cb68bca6403db87e3dd186a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>represents a self-balancing avl-tree </p>
+<p>abstraction over the <a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> <br  />
+strores the <a class="el" href="#ad13bb262cb68bca6403db87e3dd186a6">cmp_fn</a> so it does not have to be explicititly passed to every function </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad13bb262cb68bca6403db87e3dd186a6" name="ad13bb262cb68bca6403db87e3dd186a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13bb262cb68bca6403db87e3dd186a6">&#9670;&#160;</a></span>cmp_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cmp_fn avl_tree_s::cmp_fn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="#ad13bb262cb68bca6403db87e3dd186a6">cmp_fn</a> used for items in the tree </p>
+
+</div>
+</div>
+<a id="aea8c97a11be89983ca6873bbee2b83b7" name="aea8c97a11be89983ca6873bbee2b83b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8c97a11be89983ca6873bbee2b83b7">&#9670;&#160;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a>* avl_tree_s::root</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>root <a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> of the tree </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/lib/trees/<a class="el" href="avl_8h_source.html">avl.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

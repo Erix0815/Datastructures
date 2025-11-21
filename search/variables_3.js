@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['left_0',['left',['../structavl__node.html#a437d9ef012fc682b8bdb5e2faab03cd2',1,'avl_node']]]
+  ['inserted_0',['inserted',['../structavl__insert__result__s.html#a20c9d6e33e739a03da4ab31c552cfdeb',1,'avl_insert_result_s']]]
 ];

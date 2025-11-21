@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['data_0',['data',['../structavl__node.html#a33cf8276931c690f1229c5c83ed31d69',1,'avl_node']]],
+  ['data_0',['data',['../structavl__node__s.html#aa902e30fc877d3f87dc3add9c6e07e77',1,'avl_node_s']]],
   ['datastructures_20in_20c_1',['Datastructures (in C)',['../index.html',1,'']]]
 ];
