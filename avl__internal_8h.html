@@ -140,9 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a489ad8fb4396274d365940f5588aa2b0" id="r_a489ad8fb4396274d365940f5588aa2b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a489ad8fb4396274d365940f5588aa2b0">initialize_avl_node</a> (void *data)</td></tr>
 <tr class="memdesc:a489ad8fb4396274d365940f5588aa2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a new <a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a>, without children  <br /></td></tr>
 <tr class="separator:a489ad8fb4396274d365940f5588aa2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1329900fbf613531c7337cbb4e9e0ab" id="r_ae1329900fbf613531c7337cbb4e9e0ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab1deaba95295536dd7d82fba5b9a8970">avl_insert_result</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1329900fbf613531c7337cbb4e9e0ab">insert_into_avl_node</a> (<a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> *node, void *data)</td></tr>
-<tr class="memdesc:ae1329900fbf613531c7337cbb4e9e0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert data into an <a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a>  <br /></td></tr>
-<tr class="separator:ae1329900fbf613531c7337cbb4e9e0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc4949608a7d6c961610907a3a1d405" id="r_aefc4949608a7d6c961610907a3a1d405"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab1deaba95295536dd7d82fba5b9a8970">avl_insert_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefc4949608a7d6c961610907a3a1d405">insert_into_avl_node</a> (<a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> *node, <a class="el" href="universal_8h.html#acfd7df959717084d92482f7c740c024c">cmp_fn</a> <a class="el" href="universal_8h.html#acfd7df959717084d92482f7c740c024c">cmp_fn</a>, void *data)</td></tr>
+<tr class="memdesc:aefc4949608a7d6c961610907a3a1d405"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert data into an <a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a>  <br /></td></tr>
+<tr class="separator:aefc4949608a7d6c961610907a3a1d405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ab1deaba95295536dd7d82fba5b9a8970" name="ab1deaba95295536dd7d82fba5b9a8970"></a>
@@ -228,16 +228,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1329900fbf613531c7337cbb4e9e0ab" name="ae1329900fbf613531c7337cbb4e9e0ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1329900fbf613531c7337cbb4e9e0ab">&#9670;&#160;</a></span>insert_into_avl_node()</h2>
+<a id="aefc4949608a7d6c961610907a3a1d405" name="aefc4949608a7d6c961610907a3a1d405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc4949608a7d6c961610907a3a1d405">&#9670;&#160;</a></span>insert_into_avl_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab1deaba95295536dd7d82fba5b9a8970">avl_insert_result</a> * insert_into_avl_node </td>
+          <td class="memname"><a class="el" href="#ab1deaba95295536dd7d82fba5b9a8970">avl_insert_result</a> insert_into_avl_node </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="avl_8h.html#a769d6d31262b6409317c1135e9f3aea5">avl_node</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="universal_8h.html#acfd7df959717084d92482f7c740c024c">cmp_fn</a></td>          <td class="paramname"><span class="paramname"><em>cmp_fn</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -251,6 +256,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">node</td><td>root of the current subtree to insert into </td></tr>
+    <tr><td class="paramname">cmp_fn</td><td><a class="el" href="universal_8h.html#acfd7df959717084d92482f7c740c024c">cmp_fn</a> used inside the tree </td></tr>
     <tr><td class="paramname">data</td><td>data to insert </td></tr>
   </table>
   </dd>
