@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-const int NUM = 100;
+const int NUM = 8;
 int int_cmp(void* a, void* b) { return *(int*)b - *(int*)a; }
 
 int main() {
@@ -13,6 +13,6 @@ int main() {
     *item = rand();
     insert_into_avl_tree(t, item);
   }
-  // free(t);
+  // free(t); recursive
   return 0;
 }

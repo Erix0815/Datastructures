@@ -20,10 +20,10 @@ typedef enum BF_e {
  * @brief node used in an \ref avl_tree
  */
 struct avl_node_s {
-  void* data;             /**< \brief pointer to the data inside the node */
-  struct avl_node* left;  /**< \brief pointer to the left child */
-  struct avl_node* right; /**< \brief pointer to the right child */
-  BF bf;                  /**< \brief balance-factor of the node */
+  void* data;      /**< \brief pointer to the data inside the node */
+  avl_node* left;  /**< \brief pointer to the left child */
+  avl_node* right; /**< \brief pointer to the right child */
+  BF bf;           /**< \brief balance-factor of the node */
 };
 
 /**
@@ -43,8 +43,9 @@ typedef struct avl_insert_result_s {
 /**
  * @brief insert data into an \ref avl_node
  * @param node root of the current subtree to insert into
+ * @param cmp_fn \ref cmp_fn used inside the tree
  * @param data data to insert
  */
-avl_insert_result* insert_into_avl_node(avl_node* node, void* data);
+avl_insert_result insert_into_avl_node(avl_node* node, cmp_fn cmp_fn, void* data);
 
 #endif
