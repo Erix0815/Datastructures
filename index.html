@@ -123,10 +123,18 @@ Makefile</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyRight"><code>remove</code>   </td><td class="markdownTableBodyLeft">uninstall the library   </td></tr>
 </table>
+<p><code>make</code> = <code>make default</code> = <code>make fmt demo</code>\ <code>make check</code> = <code>make clean fmt doc test</code></p>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Usage</h1>
-<p>After installing the library you can include it using <code>#include &lt;mostly-trees/mostly-trees.hpp&gt;</code>.\ Dont forget to also link the library when compiling (e.g.: <code>-l mostly-trees</code>). </p>
-</div></div><!-- PageDoc -->
+<p>After installing the library you can include it using <code>#include &lt;mostly-trees/mostly-trees.hpp&gt;</code>.\ Dont forget to also link the library when compiling (e.g.: <code>-l mostly-trees</code>).</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+CI</h1>
+<p>Consider adding something like the following to your pre-commit-hooks: </p><div class="fragment"><div class="line">#!/bin/sh</div>
+<div class="line">find src/ -iname &#39;*.[ch]&#39; | xargs clang-format -n --Werror</div>
+</div><!-- fragment --><p> This ensures you dont accidentally commit malformatted code</p>
+<p>Running the unittests in a hook might also be a good idea. In that case you will however have to wait for the tests to compile and execute before commiting: </p><div class="fragment"><div class="line">#!/bin/sh</div>
+<div class="line">make test</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 <!-- start footer part -->
