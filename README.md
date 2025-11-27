@@ -29,7 +29,27 @@ Never had a datastructures-lecture in uni, so I did it myself :)
 | `install` | build and install the library   |
 |  `remove` | uninstall the library           |
 
+`make` = `make default` = `make fmt demo`\
+`make check` = `make clean fmt doc test`
+
 ## Usage
 
 After installing the library you can include it using `#include <mostly-trees/mostly-trees.hpp>`.\
 Dont forget to also link the library when compiling (e.g.: `-l mostly-trees`).
+
+## CI
+
+<!-- todo: describe github-workflows -->
+
+Consider adding something like the following to your pre-commit-hooks:
+```bash
+#!/bin/sh
+find src/ -iname '*.[ch]' | xargs clang-format -n --Werror
+```
+This ensures you dont accidentally commit malformatted code
+
+Running the unittests in a hook might also be a good idea. In that case you will however have to wait for the tests to compile and execute before commiting:
+```bash
+#!/bin/sh
+make test
+```

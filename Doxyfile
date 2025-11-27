@@ -46,7 +46,7 @@ GENERATE_XML           = NO
 HAVE_DOT               = NO
 
 # Misc
-QUIET                  = YES
+QUIET                  = NO
 WARNINGS               = YES
 WARN_IF_UNDOCUMENTED   = YES
 WARN_IF_DOC_ERROR      = YES
