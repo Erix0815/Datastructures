@@ -17,7 +17,7 @@ typedef enum BF_e {
 } BF;
 
 /**
- * @brief node used in an \ref avl_tree
+ * \brief node used in an \ref avl_tree
  */
 struct avl_node_s {
   void* data;      /**< \brief pointer to the data inside the node */
@@ -27,12 +27,12 @@ struct avl_node_s {
 };
 
 /**
- * @brief creates a new \ref avl_node, without children
+ * \brief creates a new \ref avl_node, without children
  */
 avl_node* initialize_avl_node(void* data);
 
 /**
- * @brief a struct containing information needed for updating references in \ref avl_tree and balancing the \ref avl_tree
+ * \brief a struct containing information needed for updating references in \ref avl_tree and balancing the \ref avl_tree
  */
 typedef struct avl_insert_result_s {
   avl_node* node;     /**< \brief the (new) root of the current subtree */
@@ -41,11 +41,35 @@ typedef struct avl_insert_result_s {
 } avl_insert_result;
 
 /**
- * @brief insert data into an \ref avl_node
- * @param node root of the current subtree to insert into
- * @param cmp_fn \ref cmp_fn used inside the tree
- * @param data data to insert
+ * \brief insert data into an \ref avl_node
+ * \param node root of the current subtree to insert into (can be null, to create and return a leaf-node)
+ * \param cmp_fn \ref cmp_fn used inside the tree
+ * \param data data to insert
  */
 avl_insert_result insert_into_avl_node(avl_node* node, cmp_fn cmp_fn, void* data);
+
+/**
+ * \brief left-rotate an \ref avl_node
+ * \warning requires the node to be \ref RightUnbalanced and the right child to be \ref Balanced or \ref RightHeavy
+ */
+avl_node* rotatle_left(avl_node* node);
+
+/**
+ * \brief right-rotate an \ref avl_node
+ * \warning requires the node to be \ref LeftUnbalanced and the left child to be \ref Balanced or \ref LeftHeavy
+ */
+avl_node* rotatle_right(avl_node* node);
+
+/**
+ * \brief rightleft-doublerotate an \ref avl_node
+ * \warning requires the node to be \ref RightUnbalanced and the right child to be \ref LeftHeavy
+ */
+avl_node* rotatle_rightleft(avl_node* node);
+
+/**
+ * \brief leftright-doublerotate an \ref avl_node
+ * \warning requires the node to be \ref LeftUnbalanced and the left child to be \ref RightHeavy
+ */
+avl_node* rotatle_leftright(avl_node* node);
 
 #endif
