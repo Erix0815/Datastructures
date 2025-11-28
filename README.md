@@ -29,13 +29,13 @@ Never had a datastructures-lecture in uni, so I did it myself :)
 | `install` | build and install the library   |
 |  `remove` | uninstall the library           |
 
-`make` = `make default` = `make fmt demo`\
+`make` = `make default` = `make fmt demo`<br>
 `make check` = `make clean fmt doc test`
 
 ## Usage
 
-After installing the library you can include it using `#include <mostly-trees/mostly-trees.hpp>`.\
-Dont forget to also link the library when compiling (e.g.: `-l mostly-trees`).
+After installing the library you can include it using `#include <mostly-trees/mostly-trees.h>`.<br>
+Dont forget to also link the library when compiling (e.g.: `gcc -std=gnu2x -l mostly-trees -o main main.c`).
 
 ## CI
 
